@@ -1,0 +1,144 @@
+body {
+  font-family: "Roboto";
+  box-sizing: border-box;
+  display: inline-block;
+}
+header {
+  font-style: normal;
+  width: 430px;
+  height: 490px;
+  margin: 100%;
+  margin-top: 110px;
+  padding: 25px;
+  border: 0.35mm;
+  border-style: ridge;
+  border-color: rgba(68, 68, 68, 0.2);
+  border-radius: 1.5%;
+}
+.Language {
+  display: inline-block;
+  display: flex;
+  position: absolute;
+  margin-top: -12cm;
+  padding-left: 12.7cm;
+  cursor: pointer;
+}
+.Ending {
+  display: inline-block;
+  display: flex;
+  position: absolute;
+  margin-top: -12cm;
+  padding-left: 20.2cm;
+  font-size: 14px;
+  color: rgba(26, 26, 26, 0.729);
+}
+.Ending a:visited {
+  color: rgba(26, 26, 26, 0.729);
+}
+a {
+  text-decoration: none;
+}
+button {
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  border-radius: 6%;
+  margin-left: 225px;
+  background-color: #1a73e8;
+  color: white;
+  text-align: center;
+  padding: 8px 28px;
+  cursor: pointer;
+}
+
+.sec4 {
+  display: flex;
+  /* flex-direction: row; */
+}
+
+.sec1 {
+  margin-top: 30px;
+  margin-bottom: 35px;
+  text-align: center;
+  line-height: 2;
+}
+.reset {
+  padding-top: 8px;
+  font-size: 14px;
+}
+.sec3 {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+input {
+  border: transparent;
+  color: rgba(26, 26, 26, 0.729);
+  padding: 17px;
+  padding-right: 170px;
+  border: 0.5mm;
+  border-style: ridge;
+  border-color: rgba(68, 68, 68, 0.2);
+  border-radius: 3%;
+}
+
+.sec3,
+.sec4 {
+  font-size: 14px;
+
+  line-height: 2;
+  cursor: pointer;
+}
+
+input:focus {
+  outline: none;
+  border-color: #2a85fc;
+  border: 1cm;
+  /* border-color: 0 0 10px #719ece; */
+}
+p {
+  margin: 10px 0;
+  position: relative;
+  display: inline-block;
+}
+
+label {
+  padding: 10px;
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 0.2s;
+  transition-timing-function: ease;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  opacity: 0.5;
+  background: #fff;
+}
+
+input {
+  padding: 10px;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+  opacity: 1;
+  transform: scale(0.75) translateY(-70%) translateX(-14px);
+}
+
+/* select:focus {
+  transition-delay: 1000ms;
+} */
+.reset a:visited,
+.sec3 a:visited,
+.sec4 a:visited {
+  color: #095cc8;
+}
+
+.reset a:active,
+.sec3 a:active,
+.sec4 a:active {
+  background-color: #b9bbff;
+}
+
+.Ending a:active {
+  background-color: rgb(197, 192, 186);
+}
